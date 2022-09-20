@@ -7,17 +7,18 @@ import commandTemplate from "./CommandTemplate";
 import contactTemplate from "./ContactTemplate";
 import errorTemplate from "./ErrorTemplate";
 import helpListTemplate from "./HelpListTemplate";
-import projectDetailsTemplate from "./ProjectDetailsTemplate";
-import projectsTemplate from "./ProjectsTemplate";
 import skillsTemplate from "./SkillsTemplate";
 import socialTemplate from "./SocialTemplate";
 
 const Terminal: NextPage = () => {
-  const title: String = String.raw`   _____ ___               __
-  / __(_) _ \___ ____ ___ / /
- / _// / , _/ _ '(_-</ -_) / 
-/_/ /_/_/|_|\_,_/___/\__/_/
-`;
+  const title: String = String.raw`
+
+  █████╗ ██╗   ██╗███████╗███╗   ██╗ ██████╗██╗  ██╗ █████╗ 
+  ██╔══██╗╚██╗ ██╔╝██╔════╝████╗  ██║██╔════╝██║  ██║██╔══██╗
+  ███████║ ╚████╔╝ █████╗  ██╔██╗ ██║██║     ███████║███████║
+  ██╔══██║  ╚██╔╝  ██╔══╝  ██║╚██╗██║██║     ██╔══██║██╔══██║
+  ██║  ██║   ██║   ███████╗██║ ╚████║╚██████╗██║  ██║██║  ██║
+  ╚═╝  ╚═╝   ╚═╝   ╚══════╝╚═╝  ╚═══╝ ╚═════╝╚═╝  ╚═╝╚═╝  ╚═╝  `;
   const terminal = useRef<HTMLDivElement>(null);
   const terminalParent = useRef<HTMLDivElement>(null);
   const commandInput = useRef<HTMLInputElement>(null);
@@ -73,9 +74,6 @@ const Terminal: NextPage = () => {
       case "skills":
         templateInsert(skillsTemplate, cmd);
         break;
-      case "projects":
-        templateInsert(projectsTemplate, cmd);
-        break;
       case "social":
         templateInsert(socialTemplate, cmd);
         break;
@@ -84,15 +82,15 @@ const Terminal: NextPage = () => {
         break;
       case "github":
         templateInsert(null, cmd);
-        openNewTab("https://github.com/firasel");
+        openNewTab("https://github.com/ayenchayyy");
         break;
       case "linkedin":
         templateInsert(null, cmd);
-        openNewTab("https://www.linkedin.com/in/firasel");
+        openNewTab("https://www.linkedin.com/in/ayenchaa/");
         break;
       case "facebook":
         templateInsert(null, cmd);
-        openNewTab("https://www.facebook.com/fi.mdrasel");
+        openNewTab("https://www.facebook.com/ayenchaaa");
         break;
       case "clear":
         handleSound("/clear.mp3");
@@ -108,11 +106,6 @@ const Terminal: NextPage = () => {
           Number(command[1]) < 5 &&
           command.length == 2
         ) {
-          templateInsert(
-            projectDetailsTemplate.bind(null, Number(command[1])),
-            cmd
-          );
-        } else {
           handleSound("/error.mp3");
           if (terminal.current) {
             // Entered command history insert
@@ -164,7 +157,7 @@ const Terminal: NextPage = () => {
         <div className="w-full md:flex">
           <label htmlFor="terminalInput" className="text-green text-lg">
             <span className="text-orange-default">visitor</span>
-            @terminal.firasel.com:~$
+            @terminal.ayencha.com:~$
           </label>
           <div className="w-full flex items-center">
             <span className="text-white text-lg md:hidden">&gt;</span>
