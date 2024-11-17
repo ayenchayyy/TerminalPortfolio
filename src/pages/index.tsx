@@ -6,7 +6,7 @@ const HomePage: NextPage = () => {
   return (
     <div>
       <Head>
-        <title>Aysha, frond end Developer</title>
+        <title>Aysha, front end Developer</title>
         <link rel="icon" href="/favicon.ico" />
         <meta name="author" content="Aysha" />
         <meta
@@ -26,14 +26,14 @@ const HomePage: NextPage = () => {
           content="Hi, I'm aysha, A Programmer and front end developer.."
         />
         <meta property="og:image" content="https://i.ibb.co/2SDhrHX/og.png" />
-        <meta property="og:url" content="https://terminal.firasel.com/" />
+        <meta property="og:url" content="https://ayencha.com/" />
         <meta property="og:type" content="website" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta
           name="twitter:title"
           content="Hi, I'm aysha, A Programmer and front end developer."
         />
-        <meta name="twitter:url" content="https://terminal.firasel.com/" />
+        <meta name="twitter:url" content="https://ayencha.com/" />
         <meta
           name="twitter:description"
           content="Hi, I'm aysha, A Programmer and front end developer."
