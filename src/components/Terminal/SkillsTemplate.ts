@@ -24,17 +24,12 @@ const skillsTemplate = () => {
   <span class="text-emerald-400 cursor-pointer"> NodeJS</span>,
   <span class="text-emerald-400 cursor-pointer"> ExpressJS</span>.
   <br />
-  Database:
-  <span class="text-emerald-400 cursor-pointer"> Mongodb</span>,
-  <span class="text-emerald-400 cursor-pointer"> Firestore</span>.
-  <br />
   Tools:
   <span class="text-emerald-400 cursor-pointer"> VSCode</span>,
   <span class="text-emerald-400 cursor-pointer"> Github</span>,
   <span class="text-emerald-400 cursor-pointer"> Firebase</span>,
   <span class="text-emerald-400 cursor-pointer"> Vercel</span>,
   <span class="text-emerald-400 cursor-pointer"> Netlify</span>,
-  <span class="text-emerald-400 cursor-pointer"> Heroku</span>.
   <br />`;
   return parentDiv;
 };
