@@ -139,9 +139,6 @@ const Terminal: NextPage = () => {
     >
       <div>
         <h1 className="flex items-end">
-          <span className="text-orange-default mr-1 text-lg whitespace-nowrap leading-5 md:leading-6">
-            Welcome to
-          </span>
           <pre className="text-green text-xs md:text-base">{title}</pre>
           <span className="text-orange-default -ml-2 md:-ml-4 text-lg whitespace-nowrap leading-5 md:leading-6">
             .com
