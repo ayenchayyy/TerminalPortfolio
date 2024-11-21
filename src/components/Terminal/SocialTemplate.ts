@@ -27,14 +27,6 @@ const socialTemplate = () => {
   </a>
   <br />
   &gt;
-  <a
-    href="https://www.facebook.com/ayenchaaa"
-    target="_blank"
-    rel="noreferrer"
-    class="text-emerald-400 pl-1"
-  >
-    Facebook
-  </a>
     `;
   return parentDiv;
 };

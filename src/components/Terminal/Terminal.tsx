@@ -88,10 +88,6 @@ const Terminal: NextPage = () => {
         templateInsert(null, cmd);
         openNewTab("https://www.linkedin.com/in/ayenchaa/");
         break;
-      case "facebook":
-        templateInsert(null, cmd);
-        openNewTab("https://www.facebook.com/ayenchaaa");
-        break;
       case "clear":
         handleSound("/clear.mp3");
         if (terminal?.current) {
